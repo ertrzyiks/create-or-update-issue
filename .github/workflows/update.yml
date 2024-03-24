@@ -29,7 +29,6 @@ jobs:
               github.rest.issues.update({
                 ...context.repo,
                 issue_number: issue.number,
-                title: 'Testing test 2',
                 body: 'This is a test',
               })
             } else {
