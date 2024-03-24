@@ -20,3 +20,20 @@ jobs:
 
             console.log(issue.title)
             console.log(issue.id)
+            console.log(issue.number)
+
+            if (issue) {
+              github.rest.issues.update({
+                ...context.repo,
+                issue_number: issue.number,
+                title: 'Testing test 2',
+                body: 'This is a test',
+              })
+            } else {
+              github.rest.issues.create({
+                ...context.repo,
+                title: 'Testing test',
+                body: 'This is a test',
+              })
+
+            }
