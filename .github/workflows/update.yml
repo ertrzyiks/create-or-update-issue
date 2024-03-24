@@ -16,6 +16,7 @@ jobs:
             })
             const issues = await github.paginate(opts)
 
-            for (const issue of issues) {
-              console.log(issue.title)
-            }
+            const issue = issues.find(issue => issue.title === 'Testing test')
+
+            console.log(issue.title)
+            console.log(issue.id)
