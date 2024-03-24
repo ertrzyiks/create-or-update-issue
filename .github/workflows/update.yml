@@ -21,10 +21,6 @@ jobs:
 
             const issue = issues.find(issue => issue.title === 'Testing test')
 
-            console.log(issue.title)
-            console.log(issue.id)
-            console.log(issue.number)
-
             if (issue) {
               github.rest.issues.update({
                 owner: 'ertrzyiks',
