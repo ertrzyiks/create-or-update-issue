@@ -27,13 +27,15 @@ jobs:
 
             if (issue) {
               github.rest.issues.update({
-                ...context.repo,
+                owner: 'ertrzyiks',
+                repo: 'create-or-update-issue',
                 issue_number: issue.number,
                 body: 'This is a test',
               })
             } else {
               github.rest.issues.create({
-                ...context.repo,
+                owner: 'ertrzyiks',
+                repo: 'create-or-update-issue',
                 title: 'Testing test',
                 body: 'This is a test',
               })
