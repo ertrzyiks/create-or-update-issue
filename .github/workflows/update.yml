@@ -1,8 +1,6 @@
-name: Reservation
+name: Update
 
 on:
-  schedule:
-    - cron: "0 3 * * 4"
   workflow_dispatch:
 
 jobs:
