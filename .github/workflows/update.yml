@@ -26,7 +26,7 @@ jobs:
                 owner: 'ertrzyiks',
                 repo: 'create-or-update-issue',
                 issue_number: issue.number,
-                body: 'This is a test',
+                body: 'This is a test2',
               })
             } else {
               github.rest.issues.create({
